@@ -6,7 +6,7 @@
     },
     {
       "fieldName": "price",
-      "fieldType": "Float"
+      "fieldType": "Integer"
     }
   ],
   "relationships": [],
@@ -14,5 +14,5 @@
   "readOnly": false,
   "pagination": "no",
   "name": "Item",
-  "changelogDate": "20210919235452"
+  "changelogDate": "20211010155244"
 }

@@ -18,10 +18,10 @@ spring:
     # Uncomment the following line to enable tests against production database type rather than H2, using Testcontainers
     #active: testcontainers
   application:
-    name: itemsappmono
+    name: itemcrudmono
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:mem:itemsappmono;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:itemcrudmono;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     name:
     username:
     password:
@@ -57,13 +57,13 @@ spring:
     basename: i18n/messages
   task:
     execution:
-      thread-name-prefix: itemsappmono-task-
+      thread-name-prefix: itemcrudmono-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: itemsappmono-scheduling-
+      thread-name-prefix: itemcrudmono-scheduling-
       pool:
         size: 1
   thymeleaf:
@@ -81,7 +81,7 @@ server:
 
 jhipster:
   clientApp:
-    name: 'itemsappmonoApp'
+    name: 'itemcrudmonoApp'
   logging:
     # To test json console appender
     use-json-format: false
@@ -97,7 +97,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: NzQ2NzQ3MmYxYjQxZjRmODk3MGQ5MmMwOGVjM2YzNjE2MWVmNzhlY2Y2MjNjYmE2OWQ1NDY5ZmY5YTIyNTk3ZWM5MzliZTZmZWVlMDI1NDYxNzAxMjA4YWFiOTI2OTkzNTVlZTliMjcxZjJkMzJjODJmZWQxOWQzZWIyYTlkZWI=
+        base64-secret: N2I3YjlmNGI1NDFhYzNiM2Q4Y2U5MTFlOWVmZTVhMDAwZjY2MDcxZTBhNTA4N2ZkZjhhMmM3NDczMjliNjIzODg1MTk5YzlkMGMyODVmZGMxNTg5MGJmMzI1ZTYzYjRlZDkwZTZlMTY1YjAzOWRmZTM5NWI2YTE2ZDI1YzI3YTI=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
 # ===================================================================

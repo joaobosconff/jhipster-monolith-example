@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "itemsappmono": {
+    "itemcrudmono": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -84,15 +84,15 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "itemsappmono:build:development",
+            "browserTarget": "itemcrudmono:build:development",
             "port": 4200
           },
           "configurations": {
             "production": {
-              "browserTarget": "itemsappmono:build:production"
+              "browserTarget": "itemcrudmono:build:production"
             },
             "development": {
-              "browserTarget": "itemsappmono:build:development"
+              "browserTarget": "itemcrudmono:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,7 +106,7 @@
       }
     }
   },
-  "defaultProject": "itemsappmono",
+  "defaultProject": "itemcrudmono",
   "cli": {
     "packageManager": "npm"
   }
